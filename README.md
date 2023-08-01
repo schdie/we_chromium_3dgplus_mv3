@@ -2,6 +2,7 @@
 ### **3DG+**
 ### Manifest *v3*
 **Small extension aimed at mobile foros.3dgames.com.ar that modifies some basic css/js**
+
 CSS:
 - Removes tags div from threads.
 - Removes user's signature from posts.
@@ -10,7 +11,7 @@ CSS:
 - Removes description from sub-forums.
 - Removes site-wide announcements.
 
-Javascript:
+JS:
 - Spoiler button now works.
 - Every time you enter a thread it goes to the last read post.
 - Blocks selected JS delivery from site.
