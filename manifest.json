@@ -1,0 +1,47 @@
+{
+  "name": "3DG+",
+  "description": "Small extension to modify css & js for the mobile version of foros.3dgames.com.ar",
+  "version": "3",
+  "manifest_version": 3,
+  
+  "declarative_net_request" : {
+    "rule_resources" : [{
+      "id": "ruleset_1",
+      "enabled": true,
+      "path": "rules_1.json"
+    }]
+  },
+  
+  "background": {
+    "service_worker": "background.js"
+  },
+  
+  "content_scripts": [
+  {
+    "matches": ["*://foros.3dgames.com.ar/*"],
+    "css": ["content.css"],
+    "run_at": "document_start"
+    },
+	{
+    "matches": ["*://foros.3dgames.com.ar/*"],
+    "js": ["content.js"],
+    "run_at": "document_end"
+    }
+  ],
+  
+  "web_accessible_resources": [
+    {
+      "resources": [ "jsreplace/jquery.original.mod.js" ],
+      "matches": [ "*://foros.3dgames.com.ar/*" ]
+    }
+  ],
+
+  "permissions": ["declarativeNetRequestWithHostAccess"],
+  "host_permissions": ["*://*.3dgames.com.ar/*"],
+
+  "icons": {
+    "24": "/icons/24.png",
+    "36": "/icons/36.png",
+    "48": "/icons/48.png"
+  }
+}

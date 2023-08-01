@@ -1,0 +1,43 @@
+/* ameo tiene una moneda */
+.announcements {
+	display: none !important;
+}
+
+/* tags */
+.ui-content > div:nth-child(2) {
+	display: none !important;
+}
+
+/* el primer boton respuesta */
+.ui-controlgroup-horizontal:nth-child(1) {
+	display: none !important;
+}
+
+/* links sociales y separador en posts */
+span.share-separator {
+	display: none !important;
+}
+
+.postbitlegacy .postfoot .postcontrols a.share-link, .postbit .postfoot .postcontrols a.share-link {
+	display: none !important;
+}
+
+/* sacar firmas */
+ol#posts li div.postbody blockquote.signature {
+	display: none !important;
+}
+
+/* descripcion de los foros 
+.forumbits .ui-listview .ui-li-desc p {
+	display: none !important;
+}*/
+
+/* descripcion de los sub-foros */
+.forumbit_post .ui-btn-text .ui-li-desc {
+	display: none !important;
+}
+
+/* subforums sin colapsar */
+.ui-collapsible-content-collapsed {
+  display: block !important;
+}
