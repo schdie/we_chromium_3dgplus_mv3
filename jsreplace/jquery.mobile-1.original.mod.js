@@ -2752,7 +2752,7 @@
         A.mobile.checkboxradio.prototype.enhanceWithin(C.target)
     })
 })(jQuery);
-/* ---- backup ----
+/* ---- spoiler button fix ----
 (function(A, B) {
     A.widget("mobile.button", A.mobile.widget, {
         options: {
@@ -2822,76 +2822,6 @@
     })
 })(jQuery);
  */
-/* 3dgames bugo backup very difficult
-(function(A, B) {
-    A.widget("mobile.button", A.mobile.widget, {
-        options: {
-            theme: null,
-            icon: null,
-            iconpos: null,
-            inline: null,
-            corners: true,
-            shadow: true,
-            iconshadow: true,
-            initSelector: "button, [type='button'], [type='submit'], [type='reset'], [type='image']"
-        },
-        _create: function() {
-            var D = this.element,
-                G = this.options,
-                E, C, F;
-            this.button = A("<div></div>").text(D.text() || D.val()).insertBefore(D).buttonMarkup({
-                theme: G.theme,
-                icon: G.icon,
-                iconpos: G.iconpos,
-                inline: G.inline,
-                corners: G.corners,
-                shadow: G.shadow,
-                iconshadow: G.iconshadow
-            }).append(D.addClass("ui-btn-hidden"));
-            E = D.attr("type");
-            C = D.attr("name");
-            if (E !== "button" && E !== "reset" && C) {
-                D.bind("vclick", function() {
-                    if (F === B) {
-                        F = A("<input>", {
-                            type: "hidden",
-                            name: D.attr("name"),
-                            value: D.attr("value")
-                        }).insertBefore(D);
-                        A(document).one("submit", function() {
-                            F.remove();
-                            F = B
-                        })
-                    }
-                })
-            }
-            this.refresh()
-        },
-        enable: function() {
-            this.element.attr("disabled", false);
-            this.button.removeClass("ui-disabled").attr("aria-disabled", false);
-            return this._setOption("disabled", false)
-        },
-        disable: function() {
-            this.element.attr("disabled", true);
-            this.button.addClass("ui-disabled").attr("aria-disabled", true);
-            return this._setOption("disabled", true)
-        },
-        refresh: function() {
-            var C = this.element;
-            if (C.prop("disabled")) {
-                this.disable()
-            } else {
-                this.enable()
-            }
-            this.button.data("textWrapper").text(C.text() || C.val())
-        }
-    });
-    A(document).bind("pagecreate create", function(C) {
-        A.mobile.button.prototype.enhanceWithin(C.target)
-    })
-})(jQuery);
-*/
 (function(A, B) {
     A.widget("mobile.slider", A.mobile.widget, {
         options: {
@@ -3205,6 +3135,7 @@
             (this.element.attr("disabled", true).is("[type='search'],:jqmData(type='search')") ? this.element.parent() : this.element).addClass("ui-disabled")
         },
         enable: function() {
+					  // not modded (this.element.attr("disabled", false).is("[type='search'],:jqmData(type='search')") ? this.element.parent() : this.element).removeClass("ui-disabled")
             (this.element.attr("disabled", false).is("[type='search'],:jqmData(type='search')") ? this.element.parent() : this.element).removeClass("ui-disabled")
         }
     });

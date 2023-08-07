@@ -1,7 +1,7 @@
 {
   "name": "3DG+",
   "description": "Small extension to modify css & js for the mobile version of foros.3dgames.com.ar",
-  "version": "3",
+  "version": "6",
   "manifest_version": 3,
   
   "declarative_net_request" : {
@@ -18,7 +18,7 @@
   
   "content_scripts": [
   {
-    "matches": ["*://foros.3dgames.com.ar/*"],
+    "matches": ["*://foros.3dgames.com.ar/*", "*://profiles.3dgames.com.ar/*"],
     "css": ["content.css"],
     "run_at": "document_start"
     },
@@ -31,7 +31,7 @@
   
   "web_accessible_resources": [
     {
-      "resources": [ "jsreplace/jquery.original.mod.js" ],
+      "resources": [ "jsreplace/jquery.mobile-1.original.mod.js", "jsreplace/vbulletin.mobile.original.mod.js" ],
       "matches": [ "*://foros.3dgames.com.ar/*" ]
     }
   ],

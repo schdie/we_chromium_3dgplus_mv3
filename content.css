@@ -13,6 +13,11 @@
 	display: none !important;
 }
 
+/* boton suscripcion */
+.modbuttongroup .ui-btn {
+	width: 50% !important;
+}
+
 /* links sociales y separador en posts */
 span.share-separator {
 	display: none !important;
@@ -22,7 +27,7 @@ span.share-separator {
 	display: none !important;
 }
 
-/* sacar firmas */
+/* ocultar firmas en los posts */
 ol#posts li div.postbody blockquote.signature {
 	display: none !important;
 }
@@ -40,4 +45,38 @@ ol#posts li div.postbody blockquote.signature {
 /* subforums sin colapsar */
 .ui-collapsible-content-collapsed {
   display: block !important;
+}
+
+/* deshabilitamos el submenu 
+.navbar {
+  display: none !important;
+}*/
+
+/* deshabilitamos el banner principal */
+#user_bar {
+  display: none !important;
+}
+
+.above_body {
+  display: none !important;
+}
+
+/* movemos a la izq. username y salir */
+#header .username {
+    right: 50px !important;
+}
+
+#header .login-out {
+    right: 50px !important;
+}
+
+/* css inj_search */
+.inj_search {
+    margin-top: -15px;
+    margin-bottom: -20px;
+    left: -20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
 }
