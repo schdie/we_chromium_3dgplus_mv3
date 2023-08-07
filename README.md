@@ -10,14 +10,17 @@ CSS:
 - Subforums are not collapsed (can't be re-collapsed, using CSS instead of JS).
 - Removes description from sub-forums.
 - Removes site-wide announcements.
-- Added notificatons and private messages.
+- Added notificatons and private messages to top bar.
 
 JS:
 - Spoiler button now works.
-- Added search tools to threads.
+- Added search to threads.
 - Every time you enter a thread it goes to the last read post.
-- Fixed suscription button in threads.
 - Blocks selected JS delivery from site.
+
+Fixes:
+- Subscription / Unsub from threads button.
 
 TODO:
 - Add likes to mobile version >:‑)
+- Fix quoted text.
