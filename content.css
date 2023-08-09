@@ -1,36 +1,22 @@
 /* ameo tiene una moneda */
-.announcements {
-	display: none !important;
-}
+.announcements {	display: none !important; }
 
 /* tags */
-.ui-content > div:nth-child(2) {
-	display: none !important;
-}
+.ui-content > div:nth-child(2) { display: none !important; }
 
 /* el primer boton respuesta */
-.ui-controlgroup-horizontal:nth-child(1) {
-	display: none !important;
-}
+.ui-controlgroup-horizontal:nth-child(1) { display: none !important; }
 
 /* boton suscripcion */
-.modbuttongroup .ui-btn {
-	width: 50% !important;
-}
+.modbuttongroup .ui-btn {	width: 50% !important; }
 
 /* links sociales y separador en posts */
-span.share-separator {
-	display: none !important;
-}
+span.share-separator { display: none !important; }
 
-.postbitlegacy .postfoot .postcontrols a.share-link, .postbit .postfoot .postcontrols a.share-link {
-	display: none !important;
-}
+.postbitlegacy .postfoot .postcontrols a.share-link, .postbit .postfoot .postcontrols a.share-link { display: none !important; }
 
 /* ocultar firmas en los posts */
-ol#posts li div.postbody blockquote.signature {
-	display: none !important;
-}
+ol#posts li div.postbody blockquote.signature {	display: none !important;}
 
 /* descripcion de los foros 
 .forumbits .ui-listview .ui-li-desc p {
@@ -38,14 +24,10 @@ ol#posts li div.postbody blockquote.signature {
 }*/
 
 /* descripcion de los sub-foros */
-.forumbit_post .ui-btn-text .ui-li-desc {
-	display: none !important;
-}
+.forumbit_post .ui-btn-text .ui-li-desc {	display: none !important; }
 
 /* subforums sin colapsar */
-.ui-collapsible-content-collapsed {
-  display: block !important;
-}
+.ui-collapsible-content-collapsed { display: block !important; }
 
 /* deshabilitamos el submenu 
 .navbar {
@@ -53,22 +35,14 @@ ol#posts li div.postbody blockquote.signature {
 }*/
 
 /* deshabilitamos el banner principal */
-#user_bar {
-  display: none !important;
-}
+#user_bar { display: none !important;}
 
-.above_body {
-  display: none !important;
-}
+.above_body { display: none !important; }
 
 /* movemos a la izq. username y salir */
-#header .username {
-    right: 50px !important;
-}
+#header .username { right: 50px !important; }
 
-#header .login-out {
-    right: 50px !important;
-}
+#header .login-out { right: 50px !important; }
 
 /* css inj_search */
 .inj_search {
@@ -80,3 +54,25 @@ ol#posts li div.postbody blockquote.signature {
     align-items: center;
     flex-direction: column-reverse;
 }
+
+/* yt: width 330, 300 when quoted */
+
+
+
+
+
+
+.liked .me-gusta{color:#ffc84b;}
+.liked .me-gusta a{color:#ffc84b !important;}
+.me-gusta a:hover{text-decoration:underline;cursor:pointer;}
+.me-gusta .like{display:flex;}
+.me-gusta .likes{font-size:13px;margin-left:3px;margin-right:5px;margin-top:2px;font-weight:bold;}
+.empty .me-gusta .likes{width:0;overflow:hidden;text-indent:-1000px;transition:text-indent 0s linear 0.5s;margin-right:0px;margin-left:4px;}
+.me-gusta .text{display:inline-block;width:auto;text-align:left;font-size:13px;margin-left:3px;margin-top:0px;z-index:1;}
+.me-gusta-wrapper{position:relative;margin-top:20px;margin-left:10px;}
+.me-gusta-wrapper .liked_by{font-size:13px;float:left;margin-top:2px;margin-left:5px;color:#ccc;opacity:0;background:#333;padding:7px;position:absolute;bottom:20px;left:-12px;transition:bottom 0.5s ease, opacity 0.3s ease;z-index:0;}
+.me-gusta-wrapper .liked_by li:first-child{margin-bottom:3px;}
+.me-gusta-wrapper.empty .liked_by{display:none !important;}
+.like:hover + .liked_by{bottom:30px;opacity:1;display:block;z-index:2;}
+.liked_by::after{content:"";width:0;height:0;border-left:6px solid transparent;border-right:5px solid transparent;border-top:5px solid #333;bottom:-5px;position:absolute;left:10px;}
+.liked_by li{margin:0 4px;}

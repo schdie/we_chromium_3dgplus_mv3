@@ -22,3 +22,5 @@ JS:
 Quizás en un futuro:
 - Agregar el botón de likes >:‑)
 - Arreglar los quotes.
+
+Testeado en un Samsung A34. En teléfonos con otro PPI el CSS puede no ser el mejor...
