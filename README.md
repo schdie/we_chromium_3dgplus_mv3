@@ -20,6 +20,7 @@ JS:
 - Se bloqueó algo de JS.
 
 Quizás en un futuro:
+- Arreglar temas patrocinados.
 - Agregar el botón de likes >:‑)
 - Arreglar los quotes.
 

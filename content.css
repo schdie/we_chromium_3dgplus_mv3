@@ -1,5 +1,5 @@
 /* ameo tiene una moneda */
-.announcements {	display: none !important; }
+.announcements { display: none !important; }
 
 /* tags */
 .ui-content > div:nth-child(2) { display: none !important; }
