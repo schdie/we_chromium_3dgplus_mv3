@@ -1,3 +1,6 @@
+/* viewport fix para firefox */
+body.ui-mobile-viewport { overflow-x: hidden !important; }
+
 /* ameo tiene una moneda */
 .announcements { display: none !important; }
 
@@ -57,11 +60,18 @@ ol#posts li div.postbody blockquote.signature {	display: none !important;}
 
 /* yt: width 330, 300 when quoted */
 
+/* links overflow fix */
+.content a.ui-link {
+	display: inline-block;
+  width: 99%;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis; }
+  
+/* fix for videos and images and whatever they add as objects */
+object { max-width: 100% !important; }
 
-
-
-
-
+/*
 .liked .me-gusta{color:#ffc84b;}
 .liked .me-gusta a{color:#ffc84b !important;}
 .me-gusta a:hover{text-decoration:underline;cursor:pointer;}
@@ -76,3 +86,4 @@ ol#posts li div.postbody blockquote.signature {	display: none !important;}
 .like:hover + .liked_by{bottom:30px;opacity:1;display:block;z-index:2;}
 .liked_by::after{content:"";width:0;height:0;border-left:6px solid transparent;border-right:5px solid transparent;border-top:5px solid #333;bottom:-5px;position:absolute;left:10px;}
 .liked_by li{margin:0 4px;}
+*/

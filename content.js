@@ -1,14 +1,14 @@
 // Always go to new posts from the forums but not from the threads
-var alllinks = document.getElementsByTagName("a");
+let alllinks = document.getElementsByTagName("a");
 if (document.location.href.indexOf("https://foros.3dgames.com.ar/forums/") != -1) {
-	for (var i = 0; i < alllinks.length; i++) {
+	for (let i = 0; i < alllinks.length; i++) {
 		if (alllinks[i].href.indexOf("https://foros.3dgames.com.ar/threads/") != -1) {
 			alllinks[i].href = alllinks[i].href + "?goto=newpost"
 		}
 	}
 } else {
 	// add search to threads only
-	var injsearch = document.getElementById('postlist');
+	let injsearch = document.getElementById('postlist');
 	if (injsearch != null) {
 		// find the thread id and the security token
 		const form = document.querySelector('form[name="quick_reply"]');
@@ -18,8 +18,8 @@ if (document.location.href.indexOf("https://foros.3dgames.com.ar/forums/") != -1
 		injsearch.insertAdjacentHTML('beforebegin', '<div id="inj_search" class="inj_search"><form action="search.php" method="post"><ul><input type="text" name="query" class="searchbox" placeholder="Buscar en thread..."><input type="submit" class="button" value="Búsqueda"></ul><input type="hidden" name="s" value=""><input type="hidden" name="do" value="process"><input type="hidden" name="search_type" value="1"><input type="hidden" name="contenttype" value="vBForum_Post"><input type="hidden" name="securitytoken" value="' + tokenval + '"><input type="hidden" name="searchthreadid" value="' +  threadidval + '"></form></div>');
 	}
 	// fix suscribe button in threads only
-	var getSubsB = document.getElementsByClassName('ui-btn ui-btn-up-c ui-btn-inline ui-btn-icon-notext ui-corner-right ui-controlgroup-last');
-  var lowerSubsB = getSubsB[1];
+	let getSubsB = document.getElementsByClassName('ui-btn ui-btn-up-c ui-btn-inline ui-btn-icon-notext ui-corner-right ui-controlgroup-last');
+  let lowerSubsB = getSubsB[1];
   if (lowerSubsB != null) {
 		lowerSubsB.setAttribute('class', 'newreplylink ui-btn ui-btn-up-d ui-btn-inline ui-btn-icon-right ui-corner-right');
 	}
