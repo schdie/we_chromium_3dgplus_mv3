@@ -33,3 +33,7 @@ if (document.location.href.indexOf("https://foros.3dgames.com.ar/forums/") != -1
 
 // add notifications and messages next to username
 document.getElementById("header-right").innerHTML = document.getElementById("header-right").innerHTML + '<a href="https://profiles.3dgames.com.ar/user/notifications" rel="external"><img src="https://profiles.3dgames.com.ar/assets/userbar/radar.png"></a> <br> <a href="https://profiles.3dgames.com.ar/user/Inbox/messages" rel="external"><img src="https://profiles.3dgames.com.ar/assets/userbar/messages.png"></a>';
+//document.getElementById("header-right").innerHTML = document.getElementById("header-right").innerHTML + '';
+
+// add notifications count 
+//https://foros.3dgames.com.ar/papi/notifications/get_count?_=1703609754999 the number can be replaced by the security token

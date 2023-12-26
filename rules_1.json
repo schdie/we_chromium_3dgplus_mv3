@@ -10,7 +10,7 @@
 		"id": 2,
     "priority": 1,
     "action": { "type": "redirect", "redirect": { "extensionPath": "/jsreplace/vbulletin.mobile.original.mod.js" } },
-    "condition": { "urlFilter": "||foros.3dgames.com.ar/clientscript/jquery/vbulletin-mobile.*", "resourceTypes": ["script"] }
+    "condition": { "urlFilter": "||foros.3dgames.com.ar/clientscript/vbulletin-mobile.*", "resourceTypes": ["script"] }
     
   }
 ]
