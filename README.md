@@ -1,6 +1,5 @@
-## chromium webextension
-### **3DG+**
-### Manifest *v3*
+## chromium/firefox webextension
+### **3DG+** / Manifest *v3*
 **Pequeña extensión para la versión móvil de foros.3dgames.com.ar**
 
 CSS:
