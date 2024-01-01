@@ -1,5 +1,6 @@
 /* viewport fix para firefox */
-body.ui-mobile-viewport { overflow-x: hidden !important; }
+/*body.ui-mobile-viewport { overflow-x: hidden !important; }*/
+.ui-content { overflow-x: unset !important; }
 
 /* ameo tiene una moneda */
 .announcements { display: none !important; }
@@ -43,9 +44,9 @@ ol#posts li div.postbody blockquote.signature {	display: none !important;}
 .above_body { display: none !important; }
 
 /* movemos a la izq. username y salir */
-#header .username { right: 50px !important; }
+#header .username { right: 50px !important; top: 18px !important; }
 
-#header .login-out { right: 50px !important; }
+#header .login-out { right: 50px !important; top: 40px !important; }
 
 /* css inj_search */
 .inj_search {
@@ -71,7 +72,37 @@ ol#posts li div.postbody blockquote.signature {	display: none !important;}
 /* fix for videos and images and whatever they add as objects */
 object { max-width: 100% !important; }
 
-/*
+.notify-activity{
+    position: absolute;
+		right:0.5em;
+    top:1em;
+    background:orange;
+    text-align: center;
+    color:white;
+    padding:0.25em 0.25em 0.25em 0.25em;
+    font-size:0.45em;
+    width:0.7rem;
+		height:0.7rem;
+		border-radius:50px;
+}
+
+.notify-pms{
+    position: absolute;
+		right:0.5em;
+    top:4.5em;
+    background:orange;
+    text-align: center;
+    color:white;
+    padding:0.25em 0.25em 0.25em 0.25em;
+    font-size:0.45em;
+    width:0.7rem;
+		height:0.7rem;
+		border-radius:50px;
+}
+
+/* boton me gusta
+.me-gusta{cursor:default;display:flex;align-items:center;color:#d0d0d0;}
+.me-gusta a {cursor:default;display:flex;align-items:center;color:#d0d0d0 !important;}
 .liked .me-gusta{color:#ffc84b;}
 .liked .me-gusta a{color:#ffc84b !important;}
 .me-gusta a:hover{text-decoration:underline;cursor:pointer;}
@@ -79,7 +110,7 @@ object { max-width: 100% !important; }
 .me-gusta .likes{font-size:13px;margin-left:3px;margin-right:5px;margin-top:2px;font-weight:bold;}
 .empty .me-gusta .likes{width:0;overflow:hidden;text-indent:-1000px;transition:text-indent 0s linear 0.5s;margin-right:0px;margin-left:4px;}
 .me-gusta .text{display:inline-block;width:auto;text-align:left;font-size:13px;margin-left:3px;margin-top:0px;z-index:1;}
-.me-gusta-wrapper{position:relative;margin-top:20px;margin-left:10px;}
+.me-gusta-wrapper{position:relative;margin-top:20px;margin-left:0px;}
 .me-gusta-wrapper .liked_by{font-size:13px;float:left;margin-top:2px;margin-left:5px;color:#ccc;opacity:0;background:#333;padding:7px;position:absolute;bottom:20px;left:-12px;transition:bottom 0.5s ease, opacity 0.3s ease;z-index:0;}
 .me-gusta-wrapper .liked_by li:first-child{margin-bottom:3px;}
 .me-gusta-wrapper.empty .liked_by{display:none !important;}

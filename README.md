@@ -11,14 +11,11 @@ CSS:
 - Remueve la descripción de los subforos en la página principal.
 - Remueve los posteos de anuncios globales.
 - Agrega un acceso directo a notificaciones y PMs al lado del Apodo.
+- Se arreglaron videos e imágenes que aparecían cortados/as.
 
 JS:
 - El botón de spoiler ahora funciona.
 - Se arreglaron los botones de respuesa y suscripción inferiores.
 - Se agregó la posiblidad de buscar en los hilos.
 - Al entrar a un hilo se redirecciona al último mensaje no leído.
-- Se arreglaron videos/imagenes que aparecian cortadas.
-
-Quizás en un futuro:
-- Arreglar temas patrocinados.
-- Agregar el botón de likes >:‑)
+- Notificaciones de actividad y PMs.

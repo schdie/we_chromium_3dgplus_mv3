@@ -1,0 +1,22 @@
+[
+  {
+		"id": 1,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/js/jquery.mobile-1.original.mod.js" } },
+    "condition": { "urlFilter": "||foros.3dgames.com.ar/clientscript/jquery/jquery.mobile-1.*", "resourceTypes": ["script"] }
+    
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": { "urlFilter": "||foros.3dgames.com.ar/dbtech/thanks/clientscript/thanks*", "resourceTypes": ["script"] }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": { "urlFilter": "||foros.3dgames.com.ar/dbtech/thanks/clientscript/jquery.qtip.min.*", "resourceTypes": ["script"] }
+  }
+]
+
